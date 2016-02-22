@@ -12,6 +12,7 @@
  (str"saved"(hh(h(.getBytes t)))))
 (hiccup.core/html"<!DOCTYPE html>"[:html[:head
   [:title"BitCrush"]][:body(slurp"https://dresdenlabs.appspot.com/at")
+(map (fn [f](if(.startsWith (.getName f)"1220")(.getName f)))(.listFiles(java.io.File.".")))
 [:form
  [:textarea {:name"t"}]
  [:input{:type"submit":name"a":value"save"}]]]])))))
