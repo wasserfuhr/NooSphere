@@ -1,0 +1,1 @@
+(map(fn[f](if(.startsWith f"1220")[:p(.lastModified f)[:a{:href(.getName f)}(subs (.getName f)4 12)]]))(.listFiles(java.io.File.".")))

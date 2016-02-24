@@ -1,0 +1,1 @@
+(fn[rq rs](slurp(.getParameter rq"h"))

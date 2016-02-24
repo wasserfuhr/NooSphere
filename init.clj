@@ -11,8 +11,6 @@
   (spit(str "1220"(hh(h(.getBytes t)))".txt") t)
   (str"saved"(hh(h(.getBytes t)))))
 (hiccup.core/html"<!DOCTYPE html>"[:html[:head[:title"/edit « ?"]][:body(slurp"https://dresdenlabs.appspot.com/at")
- (map(fn[f](if(.startsWith(.getName f)"1220")
-  [:a{:href(str"?e="(.getName f))}(.getName f)]))(.listFiles(java.io.File.".")))
  [:form
   [:textarea {:name"t"}]
   [:input{:type"submit":name"a":value"save"}]]]]))))))

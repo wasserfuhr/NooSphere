@@ -1,0 +1,5 @@
+(fn[rq rs]
+ (apply str
+  (map #(str (subs % 4 68)"\n")
+   (filter #(.startsWith (.getName %)"1220")
+    (.listFiles(java.io.File."H:/SpaceDrive"))))))
