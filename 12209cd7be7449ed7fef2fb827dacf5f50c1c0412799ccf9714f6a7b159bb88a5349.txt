@@ -1,5 +1,0 @@
-(fn[rq rs](hiccup.core/html"<!DOCTYPE html>"[:html[:body
- (map(fn[f](if(.startsWith(.getName f)"1220")
-  [:p(subs(str(.lastModified f))0 10)
-   [:a{:href(str"/boot?e=1220b75560a808eb7f2808c4cc093df83883a4f812229652cd64ba72ee3fdc089bb7.txt&h="(.getName f))}(subs (.getName f)4 12)]]))
-  (reverse(.listFiles(java.io.File."."))))]]))

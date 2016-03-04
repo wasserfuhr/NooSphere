@@ -1,1 +1,0 @@
-(map(fn[f](if(.startsWith f"1220")[p:(.lastModified f))[:a{:href(.getName f)}(.getName f)]]))(.listFiles(new java.io.File.".")))
