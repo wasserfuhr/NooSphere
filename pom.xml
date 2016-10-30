@@ -1,12 +1,13 @@
-﻿<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+﻿<project
+  xmlns="http://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
  <modelVersion>4.0.0</modelVersion>
  <groupId>eu.sl4</groupId>
  <artifactId>nu</artifactId>
  <version>0.1-SNAPSHOT</version>
  <packaging>jar</packaging>
- <name>DigitalPlanet</name>
+ <name>NooSphere</name>
  <properties>
   <jettyVersion>8.1.16.v20140903</jettyVersion>
   <sqlite4java.version>0.282</sqlite4java.version>
@@ -98,12 +99,12 @@
        <idleSavePeriod>1</idleSavePeriod>
       </sessionManager>
      </sessionHandler>
-<connectors>
-<!--connector implementation="org.mortbay.jetty.nio.SelectChannelConnector" -->
-<connector implementation="org.eclipse.jetty.server.bio.SocketConnector">
-<port>8080</port>
-<maxIdleTime>60000</maxIdleTime>
-</connector>
+ <connectors>
+  <!--connector implementation="org.mortbay.jetty.nio.SelectChannelConnector" -->
+   <connector implementation="org.eclipse.jetty.server.bio.SocketConnector">
+    <port>8080</port>
+    <maxIdleTime>60000</maxIdleTime>
+   </connector>
 <!-- connector implementation="org.mortbay.jetty.security.SslSocketConnector">
 <connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
 <port>8443</port>
