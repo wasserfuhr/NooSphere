@@ -1,3 +1,3 @@
-int main(void) {
-  printf("KaGr>TeilCoin");
+int main(void){
+ printf("KaGr>TeilCoin");
 }
